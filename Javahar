@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - .NET Developer</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        h1 { color: #2c3e50; }
+    </style>
+</head>
+<body>
+    <h1>Hello, I'm Javahar 👋</h1>
+    <p>.NET Full Stack Developer | C# | ASP.NET Core | Angular</p>
+    <h2>Projects</h2>
+    <ul>
+        <li><a href="#">E-Commerce Web App</a></li>
+        <li><a href="#">Task Management System</a></li>
+        <li><a href="#">Portfolio Website</a></li>
+    </ul>
+    <h2>Contact</h2>
+    <p>Email: jvharjavahar11@gmail.com | <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a> | <a href="https://github.com/JavaharGaneshMutthu">GitHub</a></p>
+</body>
+</html>
