@@ -3,22 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - .NET Developer</title>
+    <title>Javahar Ganeshmutthu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        h1 { color: #2c3e50; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .left {
+            flex: 1;
+            background: #2c3e50;
+            color: white;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+            .left img {
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-bottom: 20px;
+                border: 3px solid #fff;
+            }
+
+            .contact-info p {
+                margin: 10px 0;
+                font-size: 14px;
+                color: #f1c40f; 
+                word-break: break-word;
+            }
+
+            .contact-info i {
+                margin-right: 8px;
+                color: #f1c40f;
+            }
+
+        .skills {
+            margin-top: 30px;
+            width: 100%;
+        }
+
+            .skills h3 {
+                border-bottom: 2px solid #f1c40f;
+                padding-bottom: 5px;
+                margin-bottom: 15px;
+                font-size: 18px;
+            }
+
+            .skills ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .skills li {
+                background: rgba(255, 255, 255, 0.1);
+                margin: 8px 0;
+                padding: 8px;
+                border-radius: 8px;
+                font-size: 14px;
+            }
+
+        .right {
+            flex: 2;
+            padding: 30px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+            .header h2 {
+                margin: 0;
+                font-size: 28px;
+                color: #2c3e50;
+            }
+
+            .header h3 {
+                margin: 5px 0 0;
+                font-size: 18px;
+                color: #7f8c8d;
+            }
+
+        .section-title {
+            font-size: 20px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin: 30px 0 15px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .education-timeline {
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .education-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 30px;
+        }
+
+            .education-item::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 5px;
+                width: 15px;
+                height: 15px;
+                background: #3498db;
+                border-radius: 50%;
+                border: 3px solid #fff;
+            }
+
+            .education-item::after {
+                content: '';
+                position: absolute;
+                left: 7px;
+                top: 20px;
+                width: 2px;
+                height: calc(100% - 20px);
+                background: #bdc3c7;
+            }
+
+            .education-item:last-child::after {
+                display: none;
+            }
+
+        .edu-content h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #34495e;
+        }
+
+        .edu-content p {
+            margin: 5px 0;
+            color: #7f8c8d;
+        }
+
+        .year {
+            display: inline-block;
+            margin-top: 5px;
+            background: #3498db;
+            color: #fff;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        @media(max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left, .right {
+                flex: 1 1 100%;
+                border-radius: 0;
+            }
+
+            .left {
+                border-bottom: 1px solid #ccc;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Hello, I'm Javahar 👋</h1>
-    <p>.NET Full Stack Developer | C# | ASP.NET Core | Angular</p>
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="#">E-Commerce Web App</a></li>
-        <li><a href="#">Task Management System</a></li>
-        <li><a href="#">Portfolio Website</a></li>
-    </ul>
-    <h2>Contact</h2>
-    <p>Email: jvharjavahar11@gmail.com | <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a> | <a href="https://github.com/JavaharGaneshMutthu">GitHub</a></p>
+
+    <div class="container">
+        <div class="left">
+            <img src="https://javaharganeshmutthu.github.io/jv_profile.jpg" alt="Profile Picture">
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> jvharjavahar11@gmail.com</p>
+                <p><i class="fas fa-phone"></i> (+91) 8667092956</p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/javahar-jv-5186b1282/" target="_blank" style="color: #f1c40f;">linkedin.com/in/javahar</a></p>
+                <p><i class="fab fa-github"></i> <a href="https://github.com/JavaharGaneshMutthu" target="_blank" style="color: #f1c40f;">github.com/JavaharGaneshMutthu</a></p>
+
+            </div>
+            <div class="skills">
+                <h3>Key Skills</h3>
+                <ul>
+                    <li>C#</li>
+                    <li>ASP.Net</li>
+                    <li>.NET Core</li>
+                     <li>MVC</li>
+                     <li>WebApi</li>
+                     <li>HTML</li>
+                     <li>CSS</li>
+                     <li>JavaScript</li>
+                     <li>jQuery</li>
+                     <li>SQL Server</li>
+                     <li>AngularJS</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="header">
+                <h2>Javahar Ganeshmutthu</h2>
+                <h3>Full Stack .NET Developer</h3>
+            </div>
+
+            <h2 class="section-title">Work Experience</h2>
+            <p><strong>October 2021 – January 2023:</strong> Full Stack Developer at DIGIFRONTAL IT SOLUTION Private Limited, Thanjavur.</p>
+            <p><strong>January 2023 – Present:</strong> Software Engineer at CEDARR TECHNOLOGY SOLUTIONS Private Limited, Chennai.</p>
+
+            <h2 class="section-title">Projects</h2>
+            <p><strong>EHIFHIR & EHIAtteindre Web API Projects</strong> - Developed and integrated FHIR-based healthcare APIs for interoperability and data exchange.</p>
+            <p><strong>AI Phone Agent</strong> - Automated voice assistant integrated with OpenAI and Twilio for appointment booking.</p>
+            <p><strong>EHI Internal Projects (EMR, RCM, RPM, Medical Billing Modules)</strong> - Contributed to core healthcare product development using C# and .NET Framework, delivering scalable and maintainable backend solutions.</p>
+            <p><strong>Web API Authentication & JWT/VCard Generation</strong> - Designed and implemented secure Web API authentication, token-based JWT security, and VCard generation.</p>
+            <p><strong>FHIR Bulk Export & EHR Launch Processes</strong> - Implemented FHIR Bulk Export, Patient, Practitioner resources, Standalone, and EHR launch protocols ensuring compliance with SMART on FHIR standards.</p>
+            <p><strong>HRMS (Human Resource Management System)</strong> - Developed a robust HR management platform to streamline employee data, attendance, leave, and payroll processing functionalities.</p>
+            <p><strong>Migration of Legacy Systems</strong> - Migrated existing ASPX-based applications to modern ASP.NET MVC and Web API architecture using C#, significantly enhancing performance and maintainability.</p>
+            <p><strong>FinTrack</strong> - AI-powered financial tracking app that provides predictive analytics and smart saving suggestions.</p>
+          
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="edu-content">
+                        <h3>B.E</h3>
+                        <p>Computer Science</p>
+                        <p>Hindusthan Institute of Technology, Coimbatore</p>
+                        <span class="year">2017 - 2021</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </body>
 </html>
