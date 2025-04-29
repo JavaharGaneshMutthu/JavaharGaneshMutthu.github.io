@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javahar Ganeshmutthu</title>
+    <title>Javahar | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -36,51 +37,75 @@
             text-align: center;
         }
 
-            .left img {
-                width: 120px;
-                height: 120px;
-                object-fit: cover;
-                border-radius: 50%;
-                margin-bottom: 20px;
-                border: 3px solid #fff;
-            }
+        .left img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #fff;
+        }
 
-            .contact-info p {
-                margin: 10px 0;
-                font-size: 14px;
-                color: #f1c40f; 
-                word-break: break-word;
-            }
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #f1c40f; 
+            word-break: break-word;
+        }
 
-            .contact-info i {
-                margin-right: 8px;
-                color: #f1c40f;
-            }
+        .contact-info i {
+            margin-right: 8px;
+            color: #f1c40f;
+        }
 
         .skills {
             margin-top: 30px;
             width: 100%;
         }
 
-            .skills h3 {
-                border-bottom: 2px solid #f1c40f;
-                padding-bottom: 5px;
-                margin-bottom: 15px;
-                font-size: 18px;
-            }
+        .skills h3 {
+            border-bottom: 2px solid #f1c40f;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
 
-            .skills ul {
-                list-style: none;
-                padding: 0;
-            }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
 
-            .skills li {
-                background: rgba(255, 255, 255, 0.1);
-                margin: 8px 0;
-                padding: 8px;
-                border-radius: 8px;
-                font-size: 14px;
-            }
+        .skills li {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 8px 0;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #f1c40f;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            transform: scale(1);
+            opacity: 0;
+            position: relative;
+            left: -20px;
+            cursor: default;
+        }
+
+        .skills li i {
+            margin-right: 10px;
+            color: #f1c40f;
+        }
+
+        .skills li:hover {
+            background: #f1c40f;
+            color: #2c3e50;
+            transform: scale(1.05);
+        }
+
+        .skills li:hover i {
+            color: #2c3e50;
+        }
 
         .right {
             flex: 2;
@@ -91,17 +116,17 @@
             margin-bottom: 30px;
         }
 
-            .header h2 {
-                margin: 0;
-                font-size: 28px;
-                color: #2c3e50;
-            }
+        .header h2 {
+            margin: 0;
+            font-size: 28px;
+            color: #2c3e50;
+        }
 
-            .header h3 {
-                margin: 5px 0 0;
-                font-size: 18px;
-                color: #7f8c8d;
-            }
+        .header h3 {
+            margin: 5px 0 0;
+            font-size: 18px;
+            color: #7f8c8d;
+        }
 
         .section-title {
             font-size: 20px;
@@ -125,34 +150,8 @@
         .education-item {
             position: relative;
             margin-bottom: 30px;
-            padding-left: 30px;
+            padding-left: 0;
         }
-
-            .education-item::before {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: 5px;
-                width: 15px;
-                height: 15px;
-                background: #3498db;
-                border-radius: 50%;
-                border: 3px solid #fff;
-            }
-
-            .education-item::after {
-                content: '';
-                position: absolute;
-                left: 7px;
-                top: 20px;
-                width: 2px;
-                height: calc(100% - 20px);
-                background: #bdc3c7;
-            }
-
-            .education-item:last-child::after {
-                display: none;
-            }
 
         .edu-content h3 {
             margin: 0;
@@ -201,22 +200,21 @@
                 <p><i class="fas fa-phone"></i> (+91) 8667092956</p>
                 <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/javahar-jv-5186b1282/" target="_blank" style="color: #f1c40f;">linkedin.com/in/javahar</a></p>
                 <p><i class="fab fa-github"></i> <a href="https://github.com/JavaharGaneshMutthu" target="_blank" style="color: #f1c40f;">github.com/JavaharGaneshMutthu</a></p>
-
             </div>
             <div class="skills">
                 <h3>Key Skills</h3>
                 <ul>
-                    <li>C#</li>
-                    <li>ASP.Net</li>
-                    <li>.NET Core</li>
-                     <li>MVC</li>
-                     <li>WebApi</li>
-                     <li>HTML</li>
-                     <li>CSS</li>
-                     <li>JavaScript</li>
-                     <li>jQuery</li>
-                     <li>SQL Server</li>
-                     <li>AngularJS</li>
+                    <li><i class="fas fa-cuttlefish"></i> C#</li>
+                    <li><i class="fas fa-network-wired"></i> ASP.Net</li>
+                    <li><i class="fas fa-laptop-code"></i> .NET Core</li>
+                    <li><i class="fas fa-layer-group"></i> MVC</li>
+                    <li><i class="fas fa-cogs"></i> WebApi</li>
+                    <li><i class="fab fa-html5"></i> HTML</li>
+                    <li><i class="fab fa-css3-alt"></i> CSS</li>
+                    <li><i class="fab fa-js-square"></i> JavaScript</li>
+                    <li><i class="fas fa-code"></i> jQuery</li>
+                    <li><i class="fas fa-database"></i> SQL Server</li>
+                    <li><i class="fab fa-angular"></i> AngularJS</li>
                 </ul>
             </div>
         </div>
@@ -228,19 +226,20 @@
             </div>
 
             <h2 class="section-title">Work Experience</h2>
-            <p><strong>October 2021 – January 2023:</strong> Full Stack Developer at DIGIFRONTAL IT SOLUTION Private Limited, Thanjavur.</p>
-            <p><strong>January 2023 – Present:</strong> Software Engineer at CEDARR TECHNOLOGY SOLUTIONS Private Limited, Chennai.</p>
+            <p><strong>January 2023 – Present</strong> Software Engineer at CEDARR TECHNOLOGY SOLUTIONS Private Limited, Chennai.</p>
+            <p><strong>October 2021 – January 2023</strong> Full Stack Developer at DIGIFRONTAL IT SOLUTION Private Limited, Thanjavur.</p>
+           
 
             <h2 class="section-title">Projects</h2>
             <p><strong>EHIFHIR & EHIAtteindre Web API Projects</strong> - Developed and integrated FHIR-based healthcare APIs for interoperability and data exchange.</p>
             <p><strong>AI Phone Agent</strong> - Automated voice assistant integrated with OpenAI and Twilio for appointment booking.</p>
-            <p><strong>EHI Internal Projects (EMR, RCM, RPM, Medical Billing Modules)</strong> - Contributed to core healthcare product development using C# and .NET Framework, delivering scalable and maintainable backend solutions.</p>
-            <p><strong>Web API Authentication & JWT/VCard Generation</strong> - Designed and implemented secure Web API authentication, token-based JWT security, and VCard generation.</p>
-            <p><strong>FHIR Bulk Export & EHR Launch Processes</strong> - Implemented FHIR Bulk Export, Patient, Practitioner resources, Standalone, and EHR launch protocols ensuring compliance with SMART on FHIR standards.</p>
-            <p><strong>HRMS (Human Resource Management System)</strong> - Developed a robust HR management platform to streamline employee data, attendance, leave, and payroll processing functionalities.</p>
-            <p><strong>Migration of Legacy Systems</strong> - Migrated existing ASPX-based applications to modern ASP.NET MVC and Web API architecture using C#, significantly enhancing performance and maintainability.</p>
-            <p><strong>FinTrack</strong> - AI-powered financial tracking app that provides predictive analytics and smart saving suggestions.</p>
-          
+            <p><strong>EHI Internal Projects (EMR, RCM, RPM, Medical Billing Modules)</strong> - Contributed to core healthcare product development using C# and .NET Framework.</p>
+            <p><strong>Web API Authentication & JWT/VCard Generation</strong> - Designed and implemented secure token-based API authentication and VCard export.</p>
+            <p><strong>FHIR Bulk Export & EHR Launch</strong> - Implemented SMART on FHIR processes including Patient/Practitioner and launch workflows.</p>
+            <p><strong>HRMS</strong> - Built Human Resource Management System with employee, attendance, and payroll modules.</p>
+            <p><strong>Legacy Migration</strong> - Migrated ASPX-based legacy systems to MVC + Web API improving performance.</p>
+            <p><strong>FinTrack</strong> - AI-based financial tracker with predictive analytics and budget insights.</p>
+
             <h2 class="section-title">Education</h2>
             <div class="education-timeline">
                 <div class="education-item">
@@ -252,9 +251,16 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.skills li').each(function (i) {
+                $(this).delay(100 * i).animate({ opacity: 1, left: '0px' }, 500);
+            });
+        });
+    </script>
 
 </body>
 </html>
